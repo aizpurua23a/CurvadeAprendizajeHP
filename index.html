@@ -58,10 +58,44 @@
   <header class="masthead">
     <div class="container-fluid">
       <div class="intro-text">
-        <div class="intro-lead-in">Un podcast sobre profesionales:</div>
-        <div class="intro-lead-in">quienes son y qué han aprendido</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">¡Escucha ahora!</a>
+        <div class="intro-heading">Un podcast sobre profesionales:</div>
+        <div class="intro-heading">quiénes son y qué han aprendido</div>
       </div>
+    </div>
+    <div class="container">
+      <div class="intro-text" style="padding: 0">
+        <div class="intro-lead-in">¿Quieres saber cuándo subimos nuevos episodios?</div>  
+      </div>
+      <form method="post" action="https://formspree.io/mlenrdpz" style="padding: 0% 7% 7% 7%;">
+        <div class="row">
+          <div class="col-md-4">
+              <div class="form-group">
+                  <input type="text" name="sub_name" class="form-control" placeholder="Tu nombre" value="" style="height: 70px; font-size: 26px; font-style: italic" />
+              </div>
+          </div>
+        </div>
+          <div class="row">
+              <div class="col-md-8">
+                  <div class="form-group">
+                      <input type="text" name="_replyto" class="form-control" placeholder="Tu email" value="" style="height: 70px; font-size: 26px; font-style: italic" />
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="form-group">
+                      <input type="submit" name="btnSubmit" class="btn btn-primary btn-link-1" value="¡Suscríbeme!" style="font-size: 26px;height: 70px;" />
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+            <p>
+               Recibirás un email cada vez que subamos un episodio.<br>Te puedes dar de baja cuando quieras :)
+            </p>
+          </div>
+        </div>  
+        </form>
+
+        </div>
     </div>
   </header>
 
@@ -266,7 +300,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" placeholder="Tu email *" required="required" data-validation-required-message="Por favor, dinos tu email.">
+                  <input class="form-control" name="_replyto" id="email" type="email" placeholder="Tu email *" required="required" data-validation-required-message="Por favor, dinos tu email.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
@@ -338,10 +372,6 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
